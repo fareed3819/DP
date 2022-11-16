@@ -1,15 +1,16 @@
 package BulderDesignPattern;
 
 public class SalaryBreakupBuilder {
-    public double basic;
-    public double hra;
-    public double directAllowances;
-    public double indirectAllowances;
-    public double pfContribution;
-    public double specialAllowances;
-    public double gross;
-    public double net;
-    public double incomeTax;
+    double basic;
+    double hra;
+    double directAllowances;
+    double indirectAllowances;
+    double pfContribution;
+    double specialAllowances;
+    double gross;
+    double net;
+    double incomeTax;
+//    StringBuilder sb = new StringBuilder();
     public SalaryBreakupBuilder(double basic, double pfContribution){
         this.basic = basic;
         this.pfContribution = pfContribution;

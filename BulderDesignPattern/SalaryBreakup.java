@@ -10,7 +10,7 @@ public class SalaryBreakup {
     private final double gross;
     private final double net;
     private final double incomeTax;
-    public SalaryBreakup(SalaryBreakupBuilder salaryBuilder){
+    SalaryBreakup(SalaryBreakupBuilder salaryBuilder){
         this.basic = salaryBuilder.basic;
         this.hra = salaryBuilder.hra;
         this.directAllowances = salaryBuilder.directAllowances;

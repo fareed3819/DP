@@ -1,12 +1,11 @@
 package BulderDesignPattern;
 
-import BulderDesignPattern.BankDetails;
 
 public class Employee {
-    private String empId;
-    private String uan;
-    private BankDetails bankDetails;
-    private int lop; // loss of pay
+    private final String empId;
+    private final String uan;
+    private final BankDetails bankDetails;
+    private final int lop; // loss of pay
 
     public Employee(String empId, String uan, BankDetails bankDetails, int lop) {
         this.empId = empId;
@@ -29,15 +28,8 @@ public class Employee {
         return empId;
     }
 
-    public String getUan() {
-        return uan;
-    }
-
     public BankDetails getBankDetails() {
         return bankDetails;
     }
 
-    public int getLop() {
-        return lop;
-    }
 }
